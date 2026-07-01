@@ -13,8 +13,8 @@
         lib = pkgs.lib;
 
         nodejs = pkgs.nodejs_22;
-        # pnpm 9 matches the lockfile format used by the project
-        pnpm = pkgs.pnpm_9;
+        # pnpm 10 still reads/writes the lockfileVersion 9.0 used by the project
+        pnpm = pkgs.pnpm;
 
         # ---------------------------------------------------------------------------
         # Step 1 – Fixed-output derivation: fetch all pnpm dependencies.
